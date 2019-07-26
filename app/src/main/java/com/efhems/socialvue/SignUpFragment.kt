@@ -7,11 +7,11 @@ import android.text.Spannable
 import android.text.SpannableStringBuilder
 import android.text.style.ForegroundColorSpan
 import android.text.style.UnderlineSpan
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
 import com.efhems.socialvue.databinding.FragmentSignUpBinding
 
 
@@ -23,10 +23,9 @@ class SignUpFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
+        
         // Inflate the layout for this fragment
-
         val binding: FragmentSignUpBinding   = DataBindingUtil.inflate(inflater, R.layout.fragment_sign_up, container, false)
-        // return inflater.inflate(R.layout.fragment_sign_up, container, false)
 
 
         val string = SpannableStringBuilder(resources.getString(R.string.conditions))
