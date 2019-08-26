@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/prof_response"
+    app:startDestination="@id/queryFragment">
+
+    <fragment
+        android:id="@+id/queryFragment"
+        android:name="com.efhems.socialvue.ui.response.QueryFragment"
+        android:label="fragment_query"
+        tools:layout="@layout/fragment_query" >
+        <action
+            android:id="@+id/action_queryFragment_to_categoryFragment2"
+            app:destination="@id/categoryFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment2"
+        android:name="com.efhems.socialvue.ui.listhire.CategoryFragment"
+        android:label="CategoryFragment" >
+        <action
+            android:id="@+id/action_categoryFragment2_to_otherQuestionFragment"
+            app:destination="@id/otherQuestionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otherQuestionFragment"
+        android:name="com.efhems.socialvue.ui.response.OtherQuestionFragment"
+        android:label="fragment_other_question"
+        tools:layout="@layout/fragment_other_question" />
+</navigation>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_navigation"
+    app:startDestination="@id/categoryFragment">
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.efhems.socialvue.ui.listhire.CategoryFragment"
+        android:label="Category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_listProfFragment"
+            app:destination="@id/listProfFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/marketFragment"
+        android:name="com.efhems.socialvue.ui.listhire.MarketFragment"
+        android:label="Market"
+        tools:layout="@layout/fragment_market" />
+    <fragment
+        android:id="@+id/feedsFragment"
+        android:name="com.efhems.socialvue.ui.listhire.FeedsFragment"
+        android:label="Feeds"
+        tools:layout="@layout/fragment_feeds" />
+    <fragment
+        android:id="@+id/settingsFragment2"
+        android:name="com.efhems.socialvue.ui.listhire.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/listProfFragment"
+        android:name="com.efhems.socialvue.ui.listhire.ListProfFragment"
+        android:label=" " />
+</navigation>
